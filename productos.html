@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JL | Productos de belleza y cuidado personal</title>
+<meta name="description" content="Descubre productos de belleza, cuidado personal, cabello y skincare disponibles en JL. Consulta disponibilidad por WhatsApp.">
+<style>
+:root{--black:#080808;--white:#fff;--soft:#f6f6f4;--line:#e5e5e2;--muted:#696969;--butter:#fff3c4}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--black);background:var(--white)}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}
+.top{max-width:1200px;margin:auto;padding:15px 20px;display:flex;align-items:center;gap:20px}.brand{display:flex;align-items:center;gap:10px;min-width:max-content}.brand img{width:46px;height:46px;object-fit:contain}.brand strong{font-size:20px;letter-spacing:3px}.brand span{display:block;font-size:8px;letter-spacing:3px;margin-top:2px}
+.search{margin-left:auto;width:min(430px,100%);border:1px solid #aaa;border-radius:999px;padding:12px 17px;font-size:14px;outline:none}.search:focus{border-color:#111}
+.hero{max-width:1200px;margin:auto;padding:64px 20px 34px;display:grid;grid-template-columns:1.4fr .6fr;gap:30px;align-items:end}.eyebrow{font-size:11px;letter-spacing:3px;font-weight:700}.hero h1{font-size:clamp(44px,7vw,88px);line-height:.9;letter-spacing:-4px;margin:13px 0 18px;max-width:850px}.hero p{font-size:17px;line-height:1.55;color:#555;max-width:650px;margin:0}.hero-note{background:var(--butter);padding:24px;font-size:13px;line-height:1.55}.hero-note strong{display:block;font-size:18px;margin-bottom:7px}
+.filters{max-width:1200px;margin:auto;padding:14px 20px 30px;display:flex;gap:8px;overflow:auto;scrollbar-width:none}.filters::-webkit-scrollbar{display:none}.filters button{white-space:nowrap;border:1px solid #111;background:#fff;padding:10px 15px;border-radius:999px;cursor:pointer;font-weight:700}.filters button.active{background:#111;color:#fff}
+.section-head{max-width:1200px;margin:auto;padding:0 20px 18px;display:flex;justify-content:space-between;align-items:end}.section-head h2{font-size:25px;margin:0}.count{font-size:12px;color:var(--muted)}
+.grid{max-width:1200px;margin:auto;padding:0 20px 75px;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{border:1px solid var(--line);background:#fff;display:flex;flex-direction:column;transition:.2s}.card:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,0,0,.07)}
+.photo{aspect-ratio:1/1;background:var(--soft);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}.photo img{width:100%;height:100%;object-fit:contain;transition:.3s}.card:hover .photo img{transform:scale(1.025)}
+.tag{position:absolute;left:10px;top:10px;background:#fff;border:1px solid #ddd;padding:6px 8px;font-size:9px;letter-spacing:1.2px;text-transform:uppercase;font-weight:800}.soldout{position:absolute;right:10px;top:10px;background:#111;color:#fff;padding:7px 9px;font-size:9px;letter-spacing:1px;font-weight:800}
+.info{padding:15px;display:flex;flex-direction:column;flex:1}.name{font-size:16px;font-weight:800;line-height:1.25;min-height:40px}.desc{font-size:12px;line-height:1.5;color:#666;margin:8px 0 16px}.ask{display:block;margin-top:auto;text-decoration:none;text-align:center;background:#111;color:#fff;padding:12px 9px;font-size:11px;font-weight:800;letter-spacing:1px}.ask:hover{background:#333}.ask.disabled{background:#bbb;pointer-events:none}
+.empty{grid-column:1/-1;text-align:center;padding:60px;color:#777}.wa-float{position:fixed;right:18px;bottom:18px;z-index:30;background:#111;color:#fff;text-decoration:none;border-radius:999px;padding:14px 18px;font-size:12px;font-weight:800;box-shadow:0 7px 24px rgba(0,0,0,.2)}
+footer{background:#080808;color:#fff;padding:38px 20px}.foot{max-width:1200px;margin:auto;display:flex;justify-content:space-between;gap:25px;align-items:center}.foot strong{letter-spacing:3px}.foot p{font-size:11px;color:#bbb;margin:5px 0 0}.social{font-size:11px;letter-spacing:1px;color:#ddd;text-align:right}
+@media(max-width:900px){.grid{grid-template-columns:repeat(3,1fr)}.hero{grid-template-columns:1fr}.hero-note{max-width:600px}.top{flex-wrap:wrap}.search{order:2;width:100%;max-width:none;margin:0}}
+@media(max-width:650px){.grid{grid-template-columns:repeat(2,1fr);gap:10px;padding:0 10px 65px}.hero{padding:42px 15px 24px}.hero h1{letter-spacing:-2px}.filters{padding-left:10px}.section-head{padding-left:10px;padding-right:10px}.info{padding:11px}.name{font-size:14px;min-height:36px}.desc{font-size:11px}.brand img{width:40px;height:40px}.foot{display:block}.social{text-align:left;margin-top:20px}.wa-float{right:12px;bottom:12px}}
+</style></head>
+<body>
+<header><div class="top"><div class="brand"><img src="logoJL.jpeg" alt="JL"><div><strong>JL</strong><span>DISTRIBUCIONES</span></div></div><input id="search" class="search" placeholder="Buscar productos…"></div></header>
+<section class="hero"><div><div class="eyebrow">BELLEZA · CUIDADO · CONFIANZA</div><h1>ENCUENTRA<br>TU FAVORITO.</h1><p>Explora nuestros productos de belleza y cuidado personal. Consulta disponibilidad y recibe atención personalizada directamente por WhatsApp.</p></div><div class="hero-note"><strong>¿Te gustó un producto?</strong>Presiona “Consultar por WhatsApp” y nos llegará el nombre exacto del producto que estás viendo.</div></section>
+<div id="filters" class="filters"></div>
+<div class="section-head"><h2>Nuestros productos</h2><div id="count" class="count"></div></div>
+<main id="grid" class="grid"></main>
+<a class="wa-float" target="_blank" rel="noopener" href="https://wa.me/50487307101?text=Hola%20JL%2C%20vi%20sus%20productos%20y%20quiero%20informaci%C3%B3n.">WHATSAPP</a>
+<footer><div class="foot"><div><strong>JL DISTRIBUCIONES</strong><p>Productos de belleza y cuidado personal · Envíos a todo Honduras</p></div><div class="social">@distribucionesjl.hn · WhatsApp 8730-7101</div></div></footer>
+<script>
+const products=[
+['SKALA','Cabello','Colección Skala para Cabellos Perfectos.png','Cuidado y nutrición para diferentes necesidades del cabello.'],
+['Nevada Shampoo Anti-Caída 510 ml','Cabello','Botella de champú revitalizante Nevada.png','Cuidado capilar para complementar tu rutina diaria.'],
+['Nevada Leave-In Hair Grow 250 ml','Cabello','Spray capilar verde Nevada.png','Tratamiento sin enjuague para el cuidado del cabello.'],
+['Nevada Leave-In Cholesterol 250 ml','Cabello','Botella Nevada de Aceite de Argán.png','Tratamiento capilar de uso práctico y diario.'],
+['Yogi Care Hair Growth Serum 100 ml','Cabello','Botella Yogi Care de Sérum Capilar.png','Sérum para complementar tu rutina de cuidado capilar.'],
+['Nevada Hyaluronic Acid Face Cream','Skincare','Caja cosmética Nevada con crema facial hidratante.png','Crema facial con ácido hialurónico para tu rutina de skincare.'],
+['BIOAQUA Crema White 50 g','Skincare','Caja de Crema Facial BIOAQUA White.png','Cuidado facial BIOAQUA en presentación de 50 g.'],
+['BIOAQUA Crema Vitamina C 50 g','Skincare','Caja de Crema BIOAQUA Vitamina C.png','Crema facial con vitamina C para complementar tu rutina.'],
+['Carotone Cream 135 ml','Skincare','Tarro Carotone Glow sobre fondo blanco.png','Crema para incorporar a tu rutina de cuidado de la piel.'],
+['Nevada Whitening Serum 50 ml','Skincare','Set de sérum Nevada Whitening.png','Sérum facial Nevada en presentación de 50 ml.'],
+['Nevada Whitening Face Cream 50 g','Skincare','Caja de Crema Facial Nevada Holográfica.png','Crema facial Nevada en presentación de 50 g.'],
+['Black Hair Dye Shampoo 500 ml','Cabello','Caja de Shampoo Tinte Negro MEIDU.png','Shampoo tinte para una aplicación práctica.'],
+['Black Hair Dye Shampoo Dark/B 500 ml','Cabello','Caja de champú Hair Dye 3 en 1.png','Shampoo tinte 3 en 1 en presentación de 500 ml.'],
+['Koleston Tinte','Cabello','Catálogo Koleston_ Colores Intensos y Brillantes.png','Coloración capilar. Consulta los tonos disponibles.'],
+['BIOAQUA Rice Raw Pulp Set','Sets','Caja de Cuidado Facial con Arroz.png','Set de cuidado facial BIOAQUA con arroz.'],
+['BIOAQUA Centella Asiática Set','Sets','Caja BIOAQUA de Centella Asiática.png','Set de cuidado facial con centella asiática.'],
+['Secret Clinical Sensitive Skin 48 g','Cuidado corporal','Caja de Desodorante Clínico Secret.png','Protección antitranspirante para el cuidado diario.'],
+['Nuvys Esmalte','Uñas','Colección de esmaltes NUVYS en filas.png','Esmaltes NUVYS. Consulta los tonos disponibles.'],
+['Rexona Deo Stick Xtra Cool 45 g','Cuidado corporal','Desodorante Rexona Xtra Cool 72h.png','Desodorante en barra para tu rutina diaria.'],
+['Axe Deo Barra Dark Temptation 45 g','Cuidado corporal','Desodorante AXE Dark Temptation FIFA.png','Desodorante AXE Dark Temptation en barra.'],
+['Rexona Deo Stick Bamboo y Aloe','Cuidado corporal','Desodorante Rexona Bamboo 72h en primer plano.png','Desodorante Rexona con bamboo y aloe.'],
+['Axe Deo Spray Dark Temptation 150 ml','Cuidado corporal','Línea de desodorantes AXE variados.png','Desodorante corporal AXE en spray.'],
+['Dove Fresh Care Pepino & Té Verde 150 ml','Cuidado corporal','Dove Fresh Care Pepino & Té Verde.png','Antitranspirante Dove con pepino y té verde.'],
+['Dove Tono Uniforme Antitranspirante 150 ml','Cuidado corporal','Desodorante Dove Tono Uniforme.png','Antitranspirante Dove para el cuidado diario.'],
+['Dove Antitranspirante Granada 150 ml','Cuidado corporal','Desodorante Dove Granada y Verbena.png','Antitranspirante Dove con granada.'],
+['Dove Deo Extra Fresh 45 g','Cuidado corporal','Desodorante Dove Men+Care Extra Fresh.png','Dove Men+Care Extra Fresh en barra.'],
+['Rexona Deo Stick Power Dry 45 g','Cuidado corporal','Desodorante Rexona Powder 72h en primer plano.png','Desodorante Rexona en barra.'],
+['Dove Original Deo Barra 45 g','Cuidado corporal','Desodorante Dove Original con Sérum.png','Dove Original en presentación de barra.'],
+['Dove Deo Antitranspirante Original 45 g','Cuidado corporal','Desodorante Dove Tono Uniforme (1).png','Antitranspirante Dove en barra.'],
+['Algabo Crema para Peinar con Keratina 300 ml','Cabello','Crema para Peinar con Keratina Algabo.png','Crema para peinar con keratina.'],
+['Algabo Acondicionador Oliva & Argán 750 ml','Cabello','Acondicionador Algabo de Oliva y Argán.png','Acondicionador con oliva y argán.'],
+['Algabo Acondicionador Açaí & Romero 750 ml','Cabello','Acondicionador Açaí y Romero Sin Sal.png','Acondicionador con açaí y romero, sin sal.'],
+['Algabo Shampoo Oliva & Argán 750 ml','Cabello','Botella de Shampoo Verde con Argán.png','Shampoo con oliva y argán.'],
+['Head & Shoulders Shampoo Anti-Comezón 375 ml','Cabello','Botella de champú refrescante con menta.png','Shampoo Head & Shoulders para limpieza y frescura.'],
+['Head & Shoulders Shampoo Argán 375 ml','Cabello','Champú Head & Shoulders con argán.png','Shampoo Head & Shoulders con argán.'],
+['XtraCare Dandruff Shampoo 400 ml','Cabello','Botella de champú XtraCare azul y blanca.png','Shampoo XtraCare para el cuidado capilar.']
+].map(([name,cat,img,desc])=>({name,cat,img,desc}));
+const unavailable=new Set(['Nevada Whitening Serum 50 ml','Nevada Whitening Face Cream 50 g']);
+const cats=['Todos',...new Set(products.map(p=>p.cat))];let active='Todos';
+const grid=document.getElementById('grid'),filters=document.getElementById('filters'),search=document.getElementById('search'),count=document.getElementById('count');
+function renderFilters(){filters.innerHTML=cats.map(c=>`<button class="${c===active?'active':''}" data-cat="${c}">${c}</button>`).join('');filters.querySelectorAll('button').forEach(b=>b.onclick=()=>{active=b.dataset.cat;renderFilters();render()})}
+function render(){const q=search.value.toLowerCase().trim();const list=products.filter(p=>(active==='Todos'||p.cat===active)&&(!q||p.name.toLowerCase().includes(q)||p.cat.toLowerCase().includes(q)));count.textContent=list.length+' productos';grid.innerHTML=list.length?list.map(p=>{const out=unavailable.has(p.name);const msg=encodeURIComponent('Hola JL, vi '+p.name+' en su página y quisiera información y disponibilidad.');return `<article class="card"><div class="photo"><img loading="lazy" src="${encodeURI(p.img)}" alt="${p.name}"><span class="tag">${p.cat}</span>${out?'<span class="soldout">AGOTADO</span>':''}</div><div class="info"><div class="name">${p.name}</div><div class="desc">${p.desc}</div><a class="ask ${out?'disabled':''}" ${out?'':'target="_blank" rel="noopener" href="https://wa.me/50487307101?text='+msg+'"'}>${out?'NO DISPONIBLE':'CONSULTAR POR WHATSAPP'}</a></div></article>`}).join(''):'<div class="empty">No encontramos productos con esa búsqueda.</div>'}
+search.addEventListener('input',render);renderFilters();render();
+</script></body></html>
