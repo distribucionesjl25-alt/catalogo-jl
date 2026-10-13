@@ -16,7 +16,11 @@ const products=[
 ['7791274200588','Algabo Shampoo Oliva & Argán 750 ml',123,'Cabello','Botella de Shampoo Verde con Argán.png'],
 ['7500435231237','Head & Shoulders Shampoo Anti-Comezón 375 ml',212,'Cabello','Botella de champú refrescante con menta.png'],
 ['7500435202695','Head & Shoulders Shampoo Argán 375 ml',215,'Cabello','Champú Head & Shoulders con argán.png'],
-['849607059468','XtraCare Dandruff Shampoo 400 ml',55,'Cabello','Botella de champú XtraCare azul y blanca.png']
+['849607059468','XtraCare Dandruff Shampoo 400 ml',55,'Cabello','Botella de champú XtraCare azul y blanca.png'],
+['847610029904','Nevada Honey & Oatmeal Crema 500 ml',80,'Cuidado corporal','Botella de Loción Honey & Oatmeal(1).png'],
+['847610029881','Nevada Wild Berries Crema Corporal 500 ml',80,'Cuidado corporal','Loción Corporal Nevada Wild Berries(1).png'],
+['847610029867','Nevada Strawberry Crema 500 ml',80,'Cuidado corporal','Loción Corporal Nevada de Fresa(1).png'],
+['847610029850','Nevada Aloe Vera Crema 500 ml',80,'Cuidado corporal','Loción Corporal de Aloe Vera Nevada(1).png']
 ].map(([code,name,price,cat,img])=>({code,name,price,cat,img}));
 const soldOut=new Set(['847610048202','847610048219']);
 const cats=['Todos',...new Set(products.map(p=>p.cat))];let active='Todos';const grid=document.getElementById('grid'),filters=document.getElementById('filters'),search=document.getElementById('search');
