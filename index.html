@@ -30,9 +30,9 @@ const products=[
 ['7592701106912','WAO Shampoo + Acondicionador 1380 ml',225,'Cabello','Pack de champú y acondicionador de romero.png'],
 ['7791274200854','Algabo Enjuague Bucal 0% Alcohol 500 ml',105,'Cuidado oral','Enjuague bucal Algabo Fresh Mint.png'],
 ['7791274196485','Algabo Enjuague Bucal Artic Menthol 500 ml',105,'Cuidado oral','Enjuague bucal Algabo Artic Menthol.png'],
-['6942349778698','BIOAQUA Cleansing Oil 120 ml',75,'Skincare',''],
-['6942349782824','BIOAQUA Desmaquillante 300 ml',75,'Skincare',''],
-['6974723271174','BIOAQUA Jabón de Arroz 100 g',42,'Skincare',''],
+['6942349778698','BIOAQUA Cleansing Oil 120 ml',75,'Skincare','Caja de Aceite Limpiador BIOAQUA de Arroz.png'],
+['6942349782824','BIOAQUA Desmaquillante 300 ml',75,'Skincare','Botella BIOAQUA Desmaquillante de Arroz.png'],
+['6974723271174','BIOAQUA Jabón de Arroz 100 g',42,'Skincare','Caja de Jabón de Arroz BIOAQUA.png'],
 ].map(([code,name,price,cat,img])=>({code,name,price,cat,img}));
 const soldOut=new Set(['847610048202','847610048219']);
 const cats=['Todos',...new Set(products.map(p=>p.cat))];let active='Todos';const grid=document.getElementById('grid'),filters=document.getElementById('filters'),search=document.getElementById('search');
