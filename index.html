@@ -33,7 +33,7 @@ const products=[
 ['6942349778698','BIOAQUA Cleansing Oil 120 ml',75,'Skincare','Caja de Aceite Limpiador BIOAQUA de Arroz.png'],
 ['6942349782824','BIOAQUA Desmaquillante 300 ml',75,'Skincare','Botella BIOAQUA Desmaquillante de Arroz.png'],
 ['6974723271174','BIOAQUA Jabón de Arroz 100 g',42,'Skincare','Caja de Jabón de Arroz BIOAQUA.png'],
-['6920160016991','STAY Leave-In Romero 280 ml',90,'Cabello',''],
+['6920160016991','STAY Leave-In Romero 280 ml',90,'Cabello','Protector Capilar de Romero.png'],
 ].map(([code,name,price,cat,img])=>({code,name,price,cat,img}));
 const soldOut=new Set(['847610048202','847610048219']);
 const cats=['Todos',...new Set(products.map(p=>p.cat))];let active='Todos';const grid=document.getElementById('grid'),filters=document.getElementById('filters'),search=document.getElementById('search');
