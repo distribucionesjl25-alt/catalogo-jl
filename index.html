@@ -44,6 +44,12 @@ const products=[
 ['782353191092','ITALYA LABIAL MOUSSE VINTA ROS',55,'Maquillaje',"Tubos de labial mousse Italia Deluxe.png"],
 ['782353097011','ITALIA PRIMER BLURR',113,'Maquillaje',"Primer facial Blurr. de lujo en tonos holográficos.png"],
 ['6932159621000','BYEM FIJADORDE CEJAS',75,'Maquillaje',"Caja de Gel para Cejas Byen.png"],
+['4616',"SUSKA Pomada para Labios - Paquete",375,'Maquillaje',"Expositor rosa de pomadas labiales.png"],
+['4478',"SUSKA Brillo Labial GLL",480,'Maquillaje',"Caja de Brillos Labiales Dulces.png"],
+['7501734411405',"PROSA Aceite para Pestañas 15 ml",95,'Maquillaje',"Caja de Pestañas Gen Uno.png"],
+['7501734431144',"PROSA Máscara Protein Gel",72,'Maquillaje',"Gel Crystal Protein Gen Uno.png"],
+['7501734430116',"PROSA Máscara de Pestañas Café",75,'Maquillaje',"Seis máscaras Prosa en fila.png"],
+['7501734430178',"PROSA Delineador Negro",75,'Maquillaje',"Delineador Prosa Gen Uno Morado.png"],
 ].map(([code,name,price,cat,img])=>({code,name,price,cat,img}));
 const soldOut=new Set(['847610048202','847610048219']);
 const cats=['Todos',...new Set(products.map(p=>p.cat))];let active='Todos';const grid=document.getElementById('grid'),filters=document.getElementById('filters'),search=document.getElementById('search');
