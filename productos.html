@@ -80,6 +80,10 @@ const products=[
 ['7501734431144',"PROSA Máscara Protein Gel",72,'Maquillaje',"Gel Crystal Protein Gen Uno.png"],
 ['7501734430116',"PROSA Máscara de Pestañas Café C/U",75,'Maquillaje',"Seis máscaras Prosa en fila.png"],
 ['7501734430178',"PROSA Delineador Negro",75,'Maquillaje',"Delineador Prosa Gen Uno Morado.png"],
+['82353010011','ITALIA Lápiz Delineador Black C/U',25,'Maquillaje','Delineador negro Ultra Fine Deluxe.png'],
+['82353010615','ITALIA Lápiz Labial Mahogany C/U',25,'Maquillaje','Lápices de Labios Ultra Finos Deluxe.png'],
+['7509552904819','ELVIVE Tratamiento Nutrición 100 ml C/U',429,'Cabello','Botellas Elvive de tratamiento capilar.png'],
+['7703378571860','SAMY Base Matificante C/U',380,'Maquillaje','Cuatro bases líquidas Mad About Matte.png'],
 ].map(([code,name,price,cat,img])=>({name,cat,img,desc:(name.includes("SUSKA")?"Paquete de 24 unidades. ":name.endsWith(" C/U")?"Precio por unidad. Imagen ilustrativa de tonos o presentaciones disponibles. ":"")+"Consulta información y disponibilidad por WhatsApp."}));
 const unavailable=new Set(['Nevada Whitening Serum 50 ml','Nevada Whitening Face Cream 50 g']);
 const cats=['Todos',...new Set(products.map(p=>p.cat))];let active='Todos';
