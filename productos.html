@@ -126,6 +126,11 @@ const products=[
 ["BL-021","aretes huggie dorados",140,"JOYERÍA BLOOMING ACCESORIOS","Dúo de aretes huggie dorados.png"],
 ["BL-022","aretes cuadrados con gemas transparentes",140,"JOYERÍA BLOOMING ACCESORIOS","Par de aretes cuadrados con gemas transparentes.png"],
 ["BL-023","aretes dorados escultóricos",140,"JOYERÍA BLOOMING ACCESORIOS","Par de aretes dorados escultóricos.png"],
+["BL-024","Collar de cuentas terracota",180,"JOYERÍA BLOOMING ACCESORIOS","Collar de terracota sobre busto blanco.png"],
+["BL-025","Collar de cuentas marfil",180,"JOYERÍA BLOOMING ACCESORIOS","Collar marfil y oro sobre busto blanco.png"],
+["BL-026","Collar de cuentas rojas",180,"JOYERÍA BLOOMING ACCESORIOS","Collar rojo de cuentas en busto blanco.png"],
+["BL-027","Collar de cuentas azul cielo",180,"JOYERÍA BLOOMING ACCESORIOS","Collar de cuentas azul cielo.png"],
+["BL-028","Collar de cuentas negras",180,"JOYERÍA BLOOMING ACCESORIOS","Collar de cuentas negras y doradas.png"],
 ].map(([code,name,price,cat,img])=>({name,cat,img,desc:(name.includes("SUSKA")?"Paquete de 24 unidades. ":name.endsWith(" C/U")?"Precio por unidad. Imagen ilustrativa de tonos o presentaciones disponibles. ":"")+"Consulta información y disponibilidad por WhatsApp."}));
 const unavailable=new Set(['Nevada Whitening Serum 50 ml','Nevada Whitening Face Cream 50 g']);
 const cats=['Todos',...new Set(products.map(p=>p.cat))];let active='Todos';
